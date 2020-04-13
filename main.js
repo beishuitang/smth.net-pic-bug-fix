@@ -19,9 +19,9 @@
 
     let targetNode = document.querySelector('#main');
     let config = {
-        attributes: true,
+        attributes: false,
         childList: true,
-        subtree: true
+        subtree: false
     };
 
     function changeUrl(img) {
