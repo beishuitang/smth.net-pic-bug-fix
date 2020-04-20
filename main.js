@@ -11,13 +11,15 @@
 (function () {
     'use strict';
 
+    console.log('pic bug fixed')
     //版号
     let board = {
         NewExpress: 1348,
         Anti2019nCoV: 1110,
+        Stock: 1094,
     }
 
-    let targetNode = document.querySelector('#main');
+    let targetNode = document.querySelector('#body');
     let config = {
         attributes: false,
         childList: true,
