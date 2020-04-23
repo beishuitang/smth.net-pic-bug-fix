@@ -1,10 +1,12 @@
 // ==UserScript==
 // @name         fix jpg bug
 // @namespace    http://tampermonkey.net/
-// @version      0.1
+// @version      0.2
 // @description  修复水木看图bug
 // @author       tiewuzi
 // @match        http*://www.newsmth.net/*
+// @updateURL    https://beishuitang.github.io/smth.net-pic-bug-fix/smth_fix_pic.user.js
+
 // @grant        none
 // ==/UserScript==
 
