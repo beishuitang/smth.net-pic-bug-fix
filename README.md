@@ -13,7 +13,9 @@
 #### 第二步：安装脚本
 点击链接:  
 https://beishuitang.github.io/smth.net-pic-bug-fix/smth_fix_pic.user.js  
-在弹出的页面点击install安装即可
+
+在弹出的页面点击install安装即可  
+ps:外网比较慢，可能需要稍等或者多试几次
 
  ### 有意见建议可联系我  
  邮箱:beishuitang@163.com 
