@@ -10,7 +10,6 @@
 
 (function () {
     'use strict';
-
     console.log('pic bug fixed')
     //版号
     let board = {
@@ -27,7 +26,7 @@
     };
 
     function changeUrl(img) {
-        var m = img.src.match(/http:\/\/www\.newsmth\.net\/nForum\/att\/(\w+)\/(\d+)\/(\d+)\/large/);
+        var m = img.src.match(/https{0,1}:\/\/www\.newsmth\.net\/nForum\/att\/(\w+)\/(\d+)\/(\d+)\/large/);
         if (m != null) {
             img.src = 'http://www.newsmth.net/att.php?n.' + board[m[1]] + '.' + m[2] + '.' + m[3] + '.jpg';
         }
