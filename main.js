@@ -4,7 +4,7 @@
 // @version      0.1
 // @description  修复水木看图bug
 // @author       tiewuzi
-// @match        http://www.newsmth.net/*
+// @match        http*://www.newsmth.net/*
 // @grant        none
 // ==/UserScript==
 
