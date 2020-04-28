@@ -24,7 +24,9 @@
     function changeUrl(img) {
         var m = img.src.match(/https{0,1}:\/\/www\.newsmth\.net\/nForum\/att\/(\w+)\/(\d+)\/(\d+)\/large/);
         if (m != null) {
-            img.src = 'http://m.newsmth.net/att/' + m[1] + '/' + m[2] + '/' + m[3];
+            img.src = 'http://m.newsmth.net/att/' + m[1] + '/' + m[2] + '/' + m[3] + '/middle';
+            img.parentNode.href = 'http://m.newsmth.net/att/' + m[1] + '/' + m[2] + '/' + m[3];
+
         }
     }
 
