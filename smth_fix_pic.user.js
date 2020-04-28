@@ -13,12 +13,6 @@
 (function () {
     'use strict';
     console.log('pic bug fixed')
-    //版号
-    let board = {
-        NewExpress: 1348,
-        Anti2019nCoV: 1110,
-        Stock: 1094,
-    }
 
     let targetNode = document.querySelector('#body');
     let config = {
@@ -30,7 +24,7 @@
     function changeUrl(img) {
         var m = img.src.match(/https{0,1}:\/\/www\.newsmth\.net\/nForum\/att\/(\w+)\/(\d+)\/(\d+)\/large/);
         if (m != null) {
-            img.src = 'http://www.newsmth.net/att.php?n.' + board[m[1]] + '.' + m[2] + '.' + m[3] + '.jpg';
+            img.src = 'http://m.newsmth.net/att/' + m[1] + '/' + m[2] + '/' + m[3];
         }
     }
 
