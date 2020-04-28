@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         fix jpg bug
 // @namespace    https://github.com/beishuitang/smth.net-pic-bug-fix
-// @version      0.3
+// @version      0.4
 // @description  修复水木看图bug
 // @author       tiewuzi
 // @match        http*://www.newsmth.net/*
