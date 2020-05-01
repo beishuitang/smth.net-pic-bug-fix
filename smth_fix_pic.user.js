@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         fix jpg bug
 // @namespace    https://github.com/beishuitang/smth.net-pic-bug-fix
-// @version      0.4
+// @version      0.4.1
 // @description  修复水木看图bug
 // @author       tiewuzi
 // @match        http*://www.newsmth.net/*
@@ -31,19 +31,13 @@
     }
 
     const mutationCallback = (mutationsList) => {
-        for (let mutation of mutationsList) {
-            let target = mutation.target;
-            if (target.id == "body" && mutation.addedNodes.length > 0) {
-                var imgs = target.getElementsByTagName('img');
-                for (let index = 0; index < imgs.length; index++) {
-                    const img = imgs[index];
-                    changeUrl(img);
-                }
-            }
+        var imgs = targetNode.getElementsByTagName('img');
+        for (let index = 0; index < imgs.length; index++) {
+            const img = imgs[index];
+            changeUrl(img);
         }
     };
 
-    console.log('lll');
     let observer = new MutationObserver(mutationCallback);
     observer.observe(targetNode, config);
     //observer.disconnect();
